@@ -6,9 +6,19 @@ import com.Produto.Domain.ValueObjects.Valor;
 
 public class Produto {
 	
+		@Override
+		public String toString() {
+			return "Produto [nome=" + nome.getNome() + ", id=" + id.getId() + ", valor=" + valor.getValor() + "]";
+		}
 		private Nome nome;
 		private Id id;
 		private Valor valor;
+		
+		public Produto(Nome nome, Id id, Valor valor) {
+			this.nome = nome;
+			this.id = id;
+			this.valor = valor;
+		}
 		
 		@Override
 		public boolean equals(Object o) {
