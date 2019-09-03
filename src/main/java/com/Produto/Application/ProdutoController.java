@@ -40,8 +40,7 @@ public class ProdutoController {
 		return produtoService.updateProduto(produto);
 	}
 	@DeleteMapping("produto/{id}")
-	public boolean deletarProduto(@PathVariable("id") final String number) {
-		Id id = new Id(Integer.parseInt(number));
-		return produtoService.deleteProduto(id);
+	public void deletarProduto(@PathVariable("id") final String number) {
+		produtoService.deleteSend(number);
 	}
 }

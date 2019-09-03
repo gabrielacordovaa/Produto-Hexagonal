@@ -10,5 +10,6 @@ public interface InterfaceProdutoService {
 	boolean addProduto(Produto produto);
 	boolean updateProduto(Produto produto);
 	boolean deleteProduto(Id id);
-	
+	void deleteSend(String message);
+	void getProdutoKafka(String message);
 }

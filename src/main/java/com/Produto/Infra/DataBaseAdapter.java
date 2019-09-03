@@ -11,6 +11,7 @@ import com.datastax.driver.core.querybuilder.Insert;
 import com.datastax.driver.core.querybuilder.QueryBuilder;
 import com.datastax.driver.core.querybuilder.Select.Where;
 
+
 public class DataBaseAdapter implements InterfaceProdutoRepository {
 
 	ConnectDataBase dataBase = new ConnectDataBase();
